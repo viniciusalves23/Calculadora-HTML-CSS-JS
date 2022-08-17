@@ -1,0 +1,86 @@
+body {
+    align-items: center;
+    background-image: linear-gradient(256deg, #000000, #00ccf0);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.container {
+    max-width: 20em;
+}
+
+
+.titulo{
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+    
+.calculadora {
+    border-radius: 10px;
+    box-shadow: 0 0 40px 0px rgba(0, 0, 0, 50);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    max-width: 15em;
+    overflow: hidden;
+}
+
+.calculadoraDisplay {
+    background-color: rgb(3, 201, 184);
+    border: solid white opacity;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: right;
+    padding-right: 15px;
+    margin: 5px;
+    border-radius: 5px;
+    border: solid black 3px;
+}
+
+.calculadoraTeclas{
+    background-color: transparent;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(4, 1fr);
+    margin:2px;
+    padding: 5px;
+}
+
+.tecla{
+    border-radius: 5px;
+    box-shadow: 0 0 40px 0px rgba(0, 0, 0, 50);
+}
+
+.calculadoraTeclas > *{
+    background-color: rgb(47, 233, 146);
+    padding: 0.5em 1.25em;
+    position:relative;
+    text-align: center;
+}
+
+.calculadoraTeclas > *:active::before,
+.calculadoraTeclas > .is-depressed::before{
+
+    background-color: rgba(0, 0, 0, 0.2);
+    bottom: 0;
+    box-shadow: 0 0 6px 0;
+    content: "";
+    left: 0;
+    opacity: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.teclaOperacao{
+    color: rgb(0, 0, 0);
+}
+
+.teclaIgual{
+    background-image: linear-gradient(to bottom, #00e6ac, #0effdf);
+    grid-column: -2;
+    grid-row:2 / span 4;
+}
