@@ -1,7 +1,7 @@
 # Calculadora-HTML-CSS-JS
 Calculadora desenvolvida utilizando HTML, CSS e JavaScript.
 
-### Resultado da calculadora: 
+### Resultado da calculadora: (https://codepen.io/SAV_X/pen/NWMKrZK)
 <img src="https://github.com/viniciusalves23/Calculadora-HTML-CSS-JS/blob/master/resultado_calculadora.png?raw=true"> 
 
 ### Calculadora usada como base:
